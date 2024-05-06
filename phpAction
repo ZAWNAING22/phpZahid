@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>PHP </title>
+</head>
+<body>
+         <form action="action.php" method="post">
+          <label for="fname">First name:</label>
+
+          <input type="text" id="fname" name="fname" placeholder="Your name.."> <br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" placeholder="last name">
+          <br>
+          <input style="background-color: chartreuse;" type="submit" value="submit">
+         </form>
+        
+          
+</body>
+</html>
+/**************************/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+         <?php
+         $firstName=$_POST["fname"];
+         $lastName=$_POST["lname"];
+         echo "
+         <table border='1'>
+         <th>Fname</th> <th>Lname</th>
+         <tr> <td>$firstName</td> <td>$lastName</td></tr>
+         </table>
+          "
+                    // echo "<table border="
+
+//          ?>
+</body>
+</html>
